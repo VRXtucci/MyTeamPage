@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;700&display=swap" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <script src="./js/main.js" defer></script> -->
+    <style>
+        .saba-cabrera,
+        .griff-richards {
+            transform: translateY(45px);
+        }
+
+        .vertical-text {
+            left: 235px;
+            position: relative;
+            transform: rotate(-180deg);
+            transform-origin: left center;
+            white-space: nowrap;
+            writing-mode: vertical-rl;
+            text-align: left;
+            bottom: 325px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="max-w-screen-xl mx-auto dark:bg-gray-800 dark:text-white">
+
+
+    <nav class="bg-gray-900 text-white p-4 flex items-center justify-between">
+        <img src="./img/devchallenges.png" alt="" class="w-10 h-10" />
+        <ul class="flex space-x-4 justify-end">
+            <li><a href="#" class="text-white hover:text-gray-400">Home</a></li>
+            <li><a href="#" class="text-white hover:text-gray-400">User</a></li>
+            <li><a href="#" class="text-white hover:text-gray-400">Account</a></li>
+            <li>
+                <a href="#" class="text-white hover:text-gray-400 font-bold">View plans</a>
+            </li>
+            <button id="themeToggle" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+            </button>
+
+        </ul>
+    </nav>
+
+    <header class="flex justify-between my-10 mx-5">
+        <h1 class="text-4xl font-bold font-serif">The creative crew</h1>
+        <div class="w-[439px] h-[87px]">
+            <h2 class="font-poppins font-semibold text-lg uppercase">Who we are</h2>
+            <p class="font-poppins font-normal text-lg">
+                We are a team of creatively diverse, driven, innovative individuals
+                working in various locations from around the world.
+            </p>
+        </div>
+    </header>
+
+
+    <main class="grid grid-cols-3 gap-5 my-5 mx-5">
+        <article>
+            <img src="./img/photo1.png" alt="Bill Mahoney" class="w-52 my-2 mx-2" />
+            <h3 class="font-poppins text-lg font-semibold">Bill Mahoney</h3>
+            <span class="font-serif text-xs font-normal uppercase vertical-text">Product owner
+            </span>
+        </article>
+        <article class="saba-cabrera">
+            <img src="./img/photo2.png" alt="Saba Cabrera" class="w-52 my-2 mx-2" />
+            <h3 class="font-poppins text-lg font-semibold">Saba Cabrera</h3>
+            <span class="font-serif text-xs font-normal uppercase vertical-text">Art director</span>
+        </article>
+        <article>
+            <img src="./img/photo3.png" alt="Shae Le" class="w-52 my-2 mx-2" />
+            <h3 class="font-poppins text-lg font-semibold">Shae Le</h3>
+            <span class="font-serif text-xs font-normal uppercase vertical-text">Tech Lead</span>
+        </article>
+        <article>
+            <img src="./img/photo4.png" alt="Skylah Lu" class="w-52 my-2 mx-2" />
+            <h3 class="font-poppins text-lg font-semibold">Skylah Lu</h3>
+            <span class="font-serif text-xs font-normal uppercase vertical-text">UX Designer</span>
+        </article>
+        <article class="griff-richards">
+            <img src="./img/photo5.png" alt="Griff Richards" class="w-52 my-2 mx-2" />
+            <h3 class="font-poppins text-lg font-semibold">Griff Richards</h3>
+            <span class="font-serif text-xs font-normal uppercase vertical-text">Developer</span>
+        </article>
+        <article>
+            <img src="./img/photo6.png" alt="Stan John" class="w-52 my-2 mx-2" />
+            <h3 class="font-poppins text-lg font-semibold">Stan John</h3>
+            <span class="font-serif text-xs font-normal uppercase vertical-text">Developer</span>
+        </article>
+    </main>
+
+    <script src="./js/main.js" defer></script>
+
+</body>
+
+</html>
